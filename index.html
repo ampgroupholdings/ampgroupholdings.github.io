@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#092a35">
-    <meta name="description" content="Recover the customs duties you are owed on exported goods. A 30-day drawback audit for one flat $20,000 fee.">
-    <title>AMP Holdings | Customs Drawback Recovery</title>
+    <meta name="description" content="Retirement plan compliance and remediation support for business owners. We help identify missing Form 5500 filings and coordinate a path toward correction.">
+    <title>AMP Group Holdings | Retirement Plan Compliance &amp; Remediation</title>
     <style>
         :root {
             --ink: #102c35;
@@ -26,9 +26,8 @@
         .nav-links a { text-decoration: none; color: rgba(255,255,255,.88); font-size: .92rem; }
         .nav-links a:hover { color: var(--lime); }
         .nav-links .nav-cta { border: 1px solid rgba(255,255,255,.55); padding: 11px 17px; border-radius: 3px; }
-        .hero { min-height: 740px; height: 100svh; max-height: 1000px; display: flex; align-items: center; position: relative; overflow: hidden; background: #082831; color: white; }
-        .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-        .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,31,39,.86) 0%, rgba(5,31,39,.58) 47%, rgba(5,31,39,.08) 100%), linear-gradient(0deg, rgba(5,31,39,.35), transparent 45%); }
+        .hero { min-height: 740px; height: 100svh; max-height: 1000px; display: flex; align-items: center; position: relative; overflow: hidden; background: radial-gradient(ellipse at 78% 35%, rgba(35,106,100,.55), transparent 45%), linear-gradient(135deg, #082831 0%, #123b43 60%, #09242c 100%); color: white; }
+        .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,31,39,.24) 0%, rgba(5,31,39,.12) 55%, rgba(5,31,39,.02) 100%), linear-gradient(0deg, rgba(5,31,39,.25), transparent 45%); }
         .hero-content { z-index: 1; position: relative; width: min(1100px, 86%); margin: 70px auto 0; }
         .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: .75rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--lime); }
         .eyebrow::before { content: ""; width: 28px; height: 1px; background: currentColor; }
@@ -43,18 +42,12 @@
         .section-heading .eyebrow { color: var(--teal); }
         .section-title { margin-top: 19px; font-size: clamp(2.35rem, 4vw, 3.7rem); letter-spacing: -.045em; line-height: 1.06; }
         .section-intro { margin-top: 18px; color: var(--muted); line-height: 1.7; font-size: 1.08rem; }
-        .services { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-        .service-card { padding: 32px 30px 37px 0; }
-        .service-card + .service-card { border-left: 1px solid var(--line); padding-left: 30px; }
+        .services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+        .service-card { padding: 32px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
         .step { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border: 1px solid #afc9bd; border-radius: 50%; color: var(--teal); font-weight: 700; font-size: .83rem; }
         .service-card h3 { margin: 28px 0 15px; font-size: 1.45rem; line-height: 1.25; letter-spacing: -.025em; }
         .service-card p { color: var(--muted); line-height: 1.75; font-size: .97rem; }
         .services-cta { display: flex; justify-content: flex-end; margin-top: 26px; }
-        .contact { background: var(--ink); color: white; }
-        .contact-inner { width: min(1100px, 86%); margin: auto; padding: 78px 0; display: flex; justify-content: space-between; align-items: center; gap: 30px; }
-        .contact h2 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -.04em; }
-        .contact p { margin-top: 12px; color: rgba(255,255,255,.68); }
-        .contact .cta-button { flex: 0 0 auto; }
         footer { display: flex; justify-content: space-between; gap: 20px; padding: 24px 7%; background: #09242c; color: rgba(255,255,255,.57); font-size: .82rem; }
         footer a { text-decoration: none; }
         @media (max-width: 760px) {
@@ -63,15 +56,13 @@
             .nav-links li:first-child { display: none; }
             .nav-links .nav-cta { padding: 9px 11px; font-size: .8rem; }
             .hero { min-height: 680px; height: 92svh; }
-            .hero::after { background: linear-gradient(90deg, rgba(5,31,39,.82), rgba(5,31,39,.35)), linear-gradient(0deg, rgba(5,31,39,.4), transparent); }
+            .hero::after { background: linear-gradient(90deg, rgba(5,31,39,.35), rgba(5,31,39,.12)), linear-gradient(0deg, rgba(5,31,39,.3), transparent); }
             .hero-content { width: 86%; margin-top: 55px; }
             .section { padding: 78px 0 84px; }
             .section-heading { margin-bottom: 35px; }
             .services { grid-template-columns: 1fr; }
-            .service-card, .service-card + .service-card { padding: 27px 0; border-left: 0; }
-            .service-card + .service-card { border-top: 1px solid var(--line); }
+            .service-card { padding: 27px 22px; }
             .service-card h3 { margin-top: 18px; }
-            .contact-inner { padding: 60px 0; align-items: flex-start; flex-direction: column; }
             footer { flex-direction: column; }
         }
         @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .cta-button { transition: none; } }
@@ -88,39 +79,41 @@
 
     <main>
         <section class="hero" id="home">
-            <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="https://images.pexels.com/videos/10470498/pexels-photo-10470498.jpeg?auto=compress&cs=tinysrgb&w=1920">
-                <source src="https://videos.pexels.com/video-files/10470498/10470498-hd_1280_720_30fps.mp4" type="video/mp4">
-            </video>
             <div class="hero-content">
-                <span class="eyebrow">Customs duty drawback</span>
-                <h1>Your exports may be worth more than you think.</h1>
-                <p>We find the duty refunds hiding in your import and export history, document every dollar, and get your existing broker ready to file.</p>
-                <a href="#contact" class="cta-button">Let’s get your refund <span aria-hidden="true">↗</span></a>
-                <div class="hero-note">One flat $20K fee&nbsp; · &nbsp;30-day sprint</div>
+                <span class="eyebrow">Retirement plan compliance &amp; remediation</span>
+                <h1>Address missed retirement plan filings before they become a bigger problem.</h1>
+                <p>We help business owners identify historical Form 5500 gaps and coordinate a corrective path with independent ERISA and third-party administrator specialists.</p>
+                <a href="https://forms.zohopublic.com/infoampgroup1/form/SimpleContactUs/formperma/sUUipjbkZxJc-7AOYoVOCOiiKaK6hc4iUHNkfNXpDx0" class="cta-button">Book a 1:1 consultation <span aria-hidden="true">↗</span></a>
+                <div class="hero-note">Historical filing review&nbsp; · &nbsp;Specialist coordination&nbsp; · &nbsp;Remediation support</div>
             </div>
         </section>
 
         <section class="section" id="services">
             <div class="section-heading">
-                <span class="eyebrow">Flat $20K one-time fee · 30-day sprint</span>
-                <h2 class="section-title">A clear path from past shipments to money back.</h2>
-                <p class="section-intro">We make drawback straightforward: a focused audit, a complete evidence package, and a simple handoff to the broker you already trust.</p>
+                <span class="eyebrow">Our four-step remediation process</span>
+                <h2 class="section-title">A clear, managed path to address filing gaps.</h2>
+                <p class="section-intro">A plan being current today may not resolve earlier missed filings. Certain late Form 5500 returns can carry IRS penalties of up to $250 per day, capped at $150,000 per return, and separate DOL penalties may apply. We coordinate the review and corrective work; available relief depends on plan type, filing history, and agency notices.</p>
             </div>
             <div class="services">
                 <article class="service-card">
                     <span class="step">01</span>
-                    <h3>We find your refund in 30 days.</h3>
-                    <p>Up to 99% of the duties you paid on exported goods is refundable — yet roughly 70% goes unclaimed every year. If no one's filing drawback for you, we comb through five years of your imports and exports and document every dollar you're owed, down to the shipment.</p>
+                    <h3>Diagnostic &amp; discovery.</h3>
+                    <p>We review available EFAST2 and federal filing records to identify missing Form 5500 plan years, including a potential 2024 gap. We map the issue and coordinate an initial exposure review with the appropriate ERISA or plan-administration specialist.</p>
                 </article>
                 <article class="service-card">
                     <span class="step">02</span>
-                    <h3>Your broker files. Nothing changes.</h3>
-                    <p>We build the evidence package; the licensed customs broker you already work with prepares and files the claim with CBP. No new vendor relationships, no new systems, no regulatory risk.</p>
+                    <h3>Client intake &amp; data coordination.</h3>
+                    <p>We guide your team through secure collection of the historical plan records requested for the review, which may include trust statements and participant census data. We coordinate access and handling with the specialists working on your matter.</p>
                 </article>
                 <article class="service-card">
                     <span class="step">03</span>
-                    <h3>One flat $20K. You keep every dollar after that.</h3>
-                    <p>Traditional drawback firms take 15–30% of your refund, year after year. One flat fee for the 30-day audit — the entire refund check is yours.</p>
+                    <h3>Specialist &amp; filing coordination.</h3>
+                    <p>We coordinate with independent ERISA and third-party administrator specialists, organize the data, and track project milestones. Where the plan and filing qualify, we help coordinate EFAST2 submissions and the Department of Labor’s Delinquent Filer Voluntary Compliance Program (DFVCP).</p>
+                </article>
+                <article class="service-card">
+                    <span class="step">04</span>
+                    <h3>Project closure &amp; delivery.</h3>
+                    <p>We provide the filing receipts and program correspondence received and confirm what has been completed. Penalty relief is not automatic: DFVCP eligibility and results depend on program rules, and separate IRS penalties may apply.</p>
                 </article>
             </div>
             <div class="services-cta">
@@ -128,15 +121,6 @@
             </div>
         </section>
 
-        <section class="contact" id="contact">
-            <div class="contact-inner">
-                <div>
-                    <span class="eyebrow">Start with a conversation</span>
-                    <h2>Let’s find what you’re owed.</h2>
-                    <p>Tell us a little about your imports and exports.</p>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>
